@@ -1,0 +1,159 @@
+/* ################################ COLORS ################################ */
+/* Logo colors:
+DAE3F3 - Top bar
+6087CE - Middle bar 7798D4 - (Brighter for :hover)
+B4C7E7 - Bottom bar
+82A1D8 - Background
+F2F2F2 - Text
+
+QINT BACKGROUND:
+434954 - Background
+*/
+
+/* ################################ BUTTONS ################################ */
+.btn-primary {
+  /* background-color: #6087ce;
+  border-color: #6087ce; */
+}
+
+/* ################################ TAGS ################################ */
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', serif;
+}
+
+/* ################################ LANDING VIEW ################################ */
+.qd-landing-container {
+  position: relative;
+  text-align: center;
+  background-color: black;
+  z-index: 0; /*to fix bug*/
+}
+
+/* Remove this. Only for demo purposes */
+.qd-landing-container:hover {
+  cursor: pointer;
+}
+
+.cursorText {
+  display: none;
+  position: fixed;
+  max-width: 10rem;
+  color: lightgray;
+}
+/* End remove this*/
+
+video {
+  width: 100%;
+  min-height: 55rem;
+  object-fit: cover;
+  opacity: 0.5; /* Standard compliant browsers */
+  -moz-opacity: 0.5; /* Firefox and Mozilla browsers */
+  -webkit-opacity: 0.5; /* WebKit browser e.g. Safari */
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.qd-landing-title-container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 40rem;
+}
+
+.qd-landing-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  /* margin-bottom: 1.8rem; */
+}
+
+/* ################################ HORIZONTAL RULER ################################ */
+
+.qd-hr {
+  border-bottom: 0.2rem solid #6087ce;
+  width: 3.5rem;
+  margin: 1.7rem auto 2rem auto;
+}
+
+/* ################################ SECTIONS ################################ */
+.qd-section-container {
+  color: white;
+  text-align: center;
+  padding: 7rem;
+}
+
+.qd-light {
+  background-color: #434954;
+}
+
+.qd-dark {
+  background-color: #383c44;
+}
+
+.qd-section-text {
+  max-width: 50rem;
+}
+
+/* #### Intelligent Section #### */
+.qd-bug-fix {
+  position: relative;
+  margin-top: -6px;
+  z-index: 1;
+}
+
+/* #### Features Section #### */
+.qd-icon-container {
+  position: relative;
+  padding-top: 1rem;
+  max-width: 70rem;
+}
+
+/* Remove this. Only for Demo */
+.qd-icon-container:hover {
+  cursor: pointer;
+}
+/* End remove this */
+
+.qd-icon-title {
+  padding-top: 2rem;
+}
+
+fa-icon {
+  /* color: #6087ce; */
+}
+
+.qd-circle {
+  background: #6087ce;
+  border-radius: 50%;
+}
+
+.qd-flex-circle {
+  padding: 55px 15px 30px 15px;
+}
+
+.qd-secure-circle {
+  padding: 55px 25px 30px 25px;
+}
+
+.qd-auto-circle {
+  padding: 60px 15px 25px 15px;
+}
+
+/* ################################ FOOTER ################################ */
+.qd-footer {
+  color: white;
+  height: 6rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
+}

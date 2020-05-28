@@ -1,0 +1,149 @@
+<!-- <img
+  src="../assets/images/wide-tech.jpg"
+  class="img-fluid"
+  alt="Responsive image"
+/> -->
+
+<!-- ################################ LANDING VIEW ################################ -->
+<!-- Remove events below -->
+<div
+  class="qd-landing-container"
+  (mousemove)="moveDemoText($event)"
+  (mouseenter)="showText()"
+  (mouseleave)="hideText()"
+  (click)="changeBackground()"
+>
+  <video
+    id="pk"
+    src="../assets/videos/network-black.mp4"
+    webkit-playsinline="true"
+    playsinline="true"
+    autoplay="true"
+    muted="muted"
+    loop="true"
+  ></video>
+  <div class="qd-landing-title-container">
+    <h1 class="qd-landing-title">QINT</h1>
+    <hr class="qd-hr" />
+    <h2>
+      Connecting all your business data in one place
+    </h2>
+  </div>
+</div>
+
+<!-- ################################ SECTIONS ################################ -->
+
+<!-- #### Intelligent Section #### -->
+<div class="qd-section-container qd-light qd-bug-fix">
+  <h2>INTELLIGENT</h2>
+  <hr class="qd-hr" />
+  <p class="qd-section-text mr-auto ml-auto">
+    Qint is a programming tool used to develop intelligent systems for your
+    business. It allows us to build automated processes and efficiently
+    integrate large amounts of data. It's core features makes it possible to
+    access and manage information accross multiple platforms and present it in a
+    way adapted to your business needs.
+  </p>
+</div>
+
+<!-- #### Features Section #### -->
+<div class="qd-section-container qd-dark">
+  <h2>FEATURES</h2>
+  <hr class="qd-hr" />
+  <!-- Remove events below -->
+
+  <div
+    class="qd-icon-container ml-auto mr-auto"
+    (mousemove)="moveDemoText($event)"
+    (mouseenter)="showText()"
+    (mouseleave)="hideText()"
+    (click)="toggleIcons()"
+  >
+    <div class="row">
+      <div class="col-md-4">
+        <link
+          href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
+        <fa-icon [icon]="faNetworkWired" size="4x"></fa-icon>
+        <!-- <span class="qd-circle qd-flex-circle">
+          <fa-icon [icon]="faNetworkWired" size="4x"></fa-icon>
+        </span>
+        <h4 class="qd-icon-title">Flexible</h4>
+        <p>
+          Deigned to integrate with multiple third party systems and across many
+          different platforms. Qint’s flexibility allows organisations to work
+          with various contractors, to easily add new systems and change service
+          providers without affecting other integrations.
+        </p> -->
+      </div>
+      <!-- <div class="col-md-4">
+        <span class="qd-circle qd-secure-circle">
+          <fa-icon [icon]="faLock" size="4x"></fa-icon>
+        </span>
+        <h4 class="qd-icon-title">Secure</h4>
+        <p>
+          All the authentication information is securely stored in one place.
+          The high quality security features enables alarms to be triggered
+          instantly in case of errors and automatically notifies appropriate
+          personell.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <span class="qd-circle qd-auto-circle">
+          <fa-icon [icon]="faCogs" size="4x"></fa-icon>
+        </span>
+        <h4 class="qd-icon-title">Automatic</h4>
+        <p>
+          Qint is built to be automatic. The intention is to connect with the
+          heart of your workflow and automatically perform tasks to streamline
+          your productivity. Systems can be set to execute numerous tasks in the
+          background without the need for user input. Such as answering emails,
+          edit live data, make reports and much more!
+        </p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- #### How Section #### -->
+<div class="qd-section-container qd-light">
+  <h2>How does it work</h2>
+  <hr class="qd-hr" />
+  <p class="qd-section-text mr-auto ml-auto">
+    With the Qint platform, your organization can centrally retrieve information
+    from one or more different data sources. The download is via https calls,
+    direct database download or via the Qint agent which is easily installed on
+    the data source. The information can then be processed before it is stored.
+    With Qint, you can feel secure with your integrations as you can set alarms
+    that email/SMS you if something does not work properly.
+  </p>
+</div>
+
+<!-- #### Contact Section #### -->
+<div class="qd-section-container qd-dark">
+  <h2>Let's Get In Touch</h2>
+  <hr class="qd-hr" />
+  <p>Send us a message to see how Qint can help your organisation.</p>
+  <br />
+  <a
+    href="mailto: QDSystem@qd.se?subject=Qint&body=I'm interested to know how Qint can help my organisation and would like to set up a meeting."
+  >
+    <button class="qd-btn qd-btn-xl" type="submit">
+      CONTACT US
+    </button>
+  </a>
+</div>
+
+<!-- ################################ FOOTER ################################ -->
+<div class="qd-footer">
+  <p class="qd-copyright-text">Copyright © 2020 - Qint. All Rights Reserved.</p>
+</div>
+
+<!-- Remove this. Only for demo -->
+<div>
+  <p class="cursorText">
+    Click to change (for demo purposes only)
+  </p>
+</div>
+<!-- End remove this -->
