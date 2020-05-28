@@ -5,18 +5,30 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
+/* ################################ COLORS ################################ */
+/* Logo colors:
+DAE3F3 - Top bar
+6087CE - Middle bar 7798D4 - (Brighter for :btn)
+B4C7E7 - Bottom bar
+82A1D8 - Background
+F2F2F2 - Text
+
+QINT BACKGROUND:
+434954 - Background
+*/
+
 .qd-btn {
   font-family: 'montserrat', sans-serif;
   color: black;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  background-color: #6087ce;
-  border-color: #6087ce;
+  background-color: #7798d4;
+  border-color: #7798d4;
 }
 
 .qd-btn:hover {
-  background-color: #7798d4;
-  border-color: #7798d4;
+  background-color: #6087ce;
+  border-color: #6087ce;
 }
 
 .qd-btn-wide {

@@ -45,16 +45,8 @@ export class PageHomeComponent implements OnInit {
     $('.cursorText').css({ display: 'inline' });
   }
 
-  videoList = [
-    'blue-circut',
-    'blue-up',
-    'discreet-binary',
-    'green-circut',
-    'pulsing-circut',
-    'sideway-circut',
-    'network-black',
-  ];
-  timesClicked = 0;
+  videoList = ['blue-circut', 'green-circut', 'network-black'];
+  timesClicked = 2;
 
   changeBackground() {
     $('video').attr(
@@ -65,24 +57,8 @@ export class PageHomeComponent implements OnInit {
     $('video').trigger('play');
     this.timesClicked++;
 
-    if (this.timesClicked > 6) {
+    if (this.timesClicked > 2) {
       this.timesClicked = 0;
-    }
-
-    if (this.timesClicked === 3) {
-      $('video').css({
-        opacity: '1',
-        '-moz-opacity': '1',
-        '-webkit-opacity': '1',
-        filter: 'alpha(opacity=1)',
-      });
-    } else if (this.timesClicked === 4) {
-      $('video').css({
-        opacity: '0.5',
-        '-moz-opacity': '0.5',
-        '-webkit-opacity': '0.5',
-        filter: 'alpha(opacity=50)',
-      });
     }
   }
 

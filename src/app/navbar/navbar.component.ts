@@ -23,6 +23,43 @@ export class NavbarComponent implements OnInit {
       }
     });
 
+    // Scroll to section on link-click
+    $('.qd-logo').click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $('.qd-landing-container').offset().top,
+        },
+        500
+      );
+    });
+
+    $('#home').click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $('.qd-landing-container').offset().top,
+        },
+        500
+      );
+    });
+
+    $('#about').click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $('#intelligent-section').offset().top,
+        },
+        500
+      );
+    });
+
+    $('#contact').click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $('#contact-section').offset().top,
+        },
+        500
+      );
+    });
+
     // Change logo on hover
     // $('navbar-brand').hover(
     //   function () {
